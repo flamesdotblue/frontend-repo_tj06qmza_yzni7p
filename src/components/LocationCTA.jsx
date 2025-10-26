@@ -2,7 +2,7 @@ import { Instagram, MapPin, Phone } from "lucide-react";
 
 export default function LocationCTA() {
   return (
-    <section className="bg-emerald-900 text-emerald-50">
+    <section id="location" className="bg-emerald-900 text-emerald-50">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>

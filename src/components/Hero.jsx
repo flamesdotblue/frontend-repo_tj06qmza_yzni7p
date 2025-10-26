@@ -21,19 +21,19 @@ const Hero = () => {
 
       {/* Soft gradient overlays for readability (do not block Spline) */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08),transparent_40%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.15),transparent_40%)]" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-28 pb-16 md:pt-36 md:pb-24">
         <div className="max-w-3xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 backdrop-blur">
-            <MapPin className="h-3.5 w-3.5 text-orange-400" />
+            <MapPin className="h-3.5 w-3.5 text-emerald-300" />
             Haridwar, Uttarakhand
           </div>
 
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
             GANGA GETAWAY
-            <span className="block bg-gradient-to-r from-white via-white to-orange-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-white via-white to-emerald-300 bg-clip-text text-transparent">
               Riverside Homestay
             </span>
           </h1>
@@ -45,7 +45,7 @@ const Hero = () => {
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <a
-              href="https://instagram.com/"
+              href="https://www.instagram.com/gangagetaway?igsh=MWhxNGE1Mm5ocWpnYw=="
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/20"
@@ -56,13 +56,13 @@ const Hero = () => {
               href={`https://wa.me/${whatsappNumber}?text=${whatsappText}`}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-3 text-sm font-medium text-black transition hover:bg-orange-400"
+              className="inline-flex items-center gap-2 rounded-full bg-emerald-400 px-5 py-3 text-sm font-medium text-emerald-950 transition hover:bg-emerald-300"
             >
               <Phone className="h-4 w-4" /> WhatsApp Us
             </a>
             <div className="ml-2 hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/90 backdrop-blur sm:flex">
               {Array.from({ length: rating }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-orange-400 text-orange-400" />
+                <Star key={i} className="h-4 w-4 fill-emerald-300 text-emerald-300" />
               ))}
               <span className="ml-2 text-white/80">5.0 Rated Stay</span>
             </div>

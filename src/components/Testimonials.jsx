@@ -21,11 +21,29 @@ const testimonials = [
       'Modern yet soulful. We booked last-minute over WhatsApp and everything was seamless. Highly recommended!',
     rating: 5,
   },
+  {
+    name: 'Riya T.',
+    text:
+      'Calming colors, plants everywhere, and the softest bedding. Felt like a boutique retreat.',
+    rating: 5,
+  },
+  {
+    name: 'Gautam V.',
+    text:
+      'Great location near the ghats. The team helped us plan a morning aarti visit and local cafe trail.',
+    rating: 5,
+  },
+  {
+    name: 'Helena W.',
+    text:
+      'We loved the rooftop yoga and chai at sunrise. Will return with friends!',
+    rating: 5,
+  },
 ];
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative mx-auto max-w-7xl px-6 py-16">
+    <section id="testimonials" className="relative mx-auto max-w-7xl px-6 py-20">
       <div className="mb-10">
         <h2 className="text-2xl font-semibold md:text-3xl">Guest love</h2>
         <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
@@ -40,12 +58,12 @@ const Testimonials = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            transition={{ duration: 0.4, delay: idx * 0.05 }}
             className="rounded-2xl border border-neutral-200/60 bg-white p-6 shadow-lg ring-1 ring-black/5 dark:border-neutral-800 dark:bg-neutral-900"
           >
             <div className="mb-3 flex items-center gap-1">
               {Array.from({ length: t.rating }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-orange-400 text-orange-400" />
+                <Star key={i} className="h-4 w-4 fill-emerald-400 text-emerald-400" />
               ))}
             </div>
             <p className="text-neutral-700 dark:text-neutral-200">{t.text}</p>

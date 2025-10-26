@@ -11,7 +11,7 @@ const items = [
 
 export default function Amenities() {
   return (
-    <section className="bg-emerald-50 py-16 sm:py-24">
+    <section id="amenities" className="bg-emerald-50 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold text-emerald-900 sm:text-4xl">Everything you need to feel at home</h2>

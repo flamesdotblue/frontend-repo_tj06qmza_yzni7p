@@ -1,8 +1,10 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery';
-import BookingForm from './components/BookingForm';
+import Amenities from './components/Amenities';
+import LocationCTA from './components/LocationCTA';
 import Testimonials from './components/Testimonials';
+import BookingForm from './components/BookingForm';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
 
       {/* Content sections */}
       <main>
+        <Amenities />
         <Gallery />
+        <LocationCTA />
         <Testimonials />
         <BookingForm />
       </main>
@@ -22,7 +26,9 @@ function App() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
           <p>© {new Date().getFullYear()} GANGA GETAWAY • Haridwar, Uttarakhand</p>
           <div className="flex items-center gap-4">
+            <a href="#amenities" className="transition hover:text-neutral-900 dark:hover:text-white">Amenities</a>
             <a href="#gallery" className="transition hover:text-neutral-900 dark:hover:text-white">Gallery</a>
+            <a href="#location" className="transition hover:text-neutral-900 dark:hover:text-white">Location</a>
             <a href="#testimonials" className="transition hover:text-neutral-900 dark:hover:text-white">Reviews</a>
             <a href="#book" className="transition hover:text-neutral-900 dark:hover:text-white">Book</a>
           </div>
